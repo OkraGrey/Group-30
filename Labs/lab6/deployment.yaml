@@ -1,0 +1,12 @@
+name: iris-classifier
+description: Iris classification model deployment
+version: 1.0.0
+flow_name: main
+entrypoint: ml_pipeline.py:main
+parameters:
+  dataset_path: "Iris.csv"
+  accuracy_threshold: 0.9
+  test_size: 0.2
+work_pool:
+  name: default
+  work_queue_name: default
